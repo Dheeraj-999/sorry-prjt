@@ -71,6 +71,15 @@
       background: #ff2f70;
     }
 
+    button {
+  transition: transform 0.2s ease; /* smooth animation */
+}
+
+button:hover {
+  transform: scale(1.1); /* makes button bigger */
+}
+
+
     .hidden { display: none; }
 
     .message {
@@ -116,6 +125,8 @@
         width: 100%;
       }
     }
+
+
   </style>
 </head>
 <body>
@@ -124,7 +135,7 @@
     <!-- First screen (heading + intro) -->
     <div id="introScreen">
       <h1>Hey Sana 💖</h1>
-      <p>Earphone lagale sana, press start and take a deep breath for 5 sec.😌 </p>
+      <p>Earphone lagale sana, start press kar aur 5 sec ka long Breath le 😌 </p>
       <button id="startBtn">Start</button>
       <p class="message hidden" id="msg">This one is just for you 💕</p>
       <button id="reallyBtn" class="hidden">Really... 💭</button>
@@ -133,7 +144,7 @@
     <!-- First box -->
     <div id="firstPoints" class="hidden">
       <ul>
-        <li>Sana, jab mene tujhse baat ki pehle baar ✨,<br> pta hi nhi tha tu ese ayege mere life mei 💖💫</li>
+        <li>Sana, Thanks to ur clutch jispe MRP likha hua tha ✨,<br> nhi toh aaj yeh din nhi aata 💖💫</li>
       </ul>
       <button id="nextBtn">Achhaa ➡️</button>
     </div>
@@ -198,7 +209,7 @@
         but I only wish for one thing –<br>
         that you never become a memory,<br>
         you always remain near me forever."<br><br>
-        Take care Sana, jaldi recover hoja yr,<br> (Ansu tere ho par ankhein mere)..<br>Tu shi rehege to chize shi hote jeyenge..hm 🥹💕✨<br>  
+        Take care Sana, jaldi recover hoja yr, ghumna hai tere sath relax hoke...<br>Tu shi rehege to chize shi hote jeyenge..hm 🥹💕✨<br>  
         <b>With all my care 💖 - Dheeraj</b>
       </p>
     </div>
@@ -207,6 +218,8 @@
   <audio id="song">
     <source src="song.mp3" type="audio/mpeg">
   </audio>
+
+  
 
   <script>
     const startBtn = document.getElementById('startBtn');
@@ -256,7 +269,7 @@
 
     noBtn.addEventListener('click', (e) => {
       e.preventDefault();
-      alert("No option for this 😜, you can only click 'Shi mei?' 💖");
+      alert("No option for this 😜, Tujhe manna hi pdega..' 💖");
     });
 
     no2Btn.addEventListener('click', () => {
@@ -294,5 +307,3 @@
   </script>
 </body>
 </html>
-
-
